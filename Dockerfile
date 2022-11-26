@@ -11,10 +11,10 @@ WORKDIR /fuseki
 #COPY data/ds.ttl /fuseki/configuration/ds.ttl
 #WORKDIR /fuseki/databases
 #ADD data/ds.tar.gz /fuseki/databases
-#COPY shiro.ini /jena-fuseki/shiro.ini
 
 
-#COPY shiro.ini $FUSEKI_HOME/shiro.ini
+
+COPY shiro.ini $FUSEKI_HOME/shiro.ini
 COPY entrypoint.sh /
 RUN chmod 755 /entrypoint.sh
 
