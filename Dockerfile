@@ -7,9 +7,9 @@ ENV PORT 3030
 WORKDIR /fuseki
 
 
-RUN mkdir -p configuration
+#RUN mkdir -p configuration
 #COPY data/cells.ttl /fuseki/configuration/cells.ttl
-WORKDIR /fuseki/databases
+#WORKDIR /fuseki/databases
 #descompacta 
 #ADD data/cells.tar.gz /fuseki/databases  
 
