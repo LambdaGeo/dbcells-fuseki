@@ -10,7 +10,7 @@ services:
     environment:
       - ADMIN_PASSWORD=admin
       - PORT=3030
-    volumes: 
+    #volumes: 
      # - ./backup:/fuseki/backups
      # - ./configuration:/fuseki/configuration
      # - ./databases:/fuseki/databases

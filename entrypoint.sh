@@ -15,6 +15,8 @@
 #   limitations under the License.
 
 set -e
+#echo "Apagando o lock"
+#rm -f "$FUSEKI_BASE/databases/cells/tdb.lock" 
 
 if [ ! -f "$FUSEKI_BASE/shiro.ini" ] ; then
   # First time
