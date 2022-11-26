@@ -12,8 +12,8 @@ services:
       - PORT=3030
     #volumes: 
      # - ./backup:/fuseki/backups
-     # - ./configuration:/fuseki/configuration
-     # - ./databases:/fuseki/databases
+     #- ./configuration:/fuseki/configuration
+     #- ./databases:/fuseki/databases
       
 
 
