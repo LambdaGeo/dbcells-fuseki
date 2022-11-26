@@ -8,10 +8,11 @@ WORKDIR /fuseki
 
 
 RUN mkdir -p configuration
-COPY coniguration/cells.ttl /fuseki/configuration/cells.ttl
+COPY configuration/cells.ttl /fuseki/configuration/cells.ttl
 WORKDIR /fuseki/databases
-COPY databases/cells /fuseki/databases
-#ADD data/ds.tar.gz /fuseki/databases
+#descompacta 
+ADD databases/cells.tar.gz /fuseki/databases  
+
 
 ENV FUSEKI_HOME /jena-fuseki
 
