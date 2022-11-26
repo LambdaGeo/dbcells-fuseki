@@ -11,7 +11,7 @@ services:
       - ADMIN_PASSWORD=admin
       - PORT=3030
     volumes: 
-      - ./backup:/fuseki/backups
+     # - ./backup:/fuseki/backups
      # - ./configuration:/fuseki/configuration
      # - ./databases:/fuseki/databases
       
