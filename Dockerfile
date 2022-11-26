@@ -12,7 +12,7 @@ WORKDIR /fuseki
 #WORKDIR /fuseki/databases
 #ADD data/ds.tar.gz /fuseki/databases
 
-
+ENV FUSEKI_HOME /jena-fuseki
 
 COPY shiro.ini $FUSEKI_HOME/shiro.ini
 COPY entrypoint.sh /
