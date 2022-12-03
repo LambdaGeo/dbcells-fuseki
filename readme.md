@@ -14,3 +14,5 @@ antes de dar up, dar um down
 docker-compose down --volumes --rmi all
 
 docker-compose exec fuseki bash
+
+tar -czvf cell.tar.gz cells/
