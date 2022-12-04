@@ -39,6 +39,7 @@ if [ -n "$ADMIN_PASSWORD" ] ; then
   sed -i "s/^admin=.*/admin=$ADMIN_PASSWORD/" "$FUSEKI_BASE/shiro.ini"
 fi
 
+echo $PORT
 exec "$@" --port=$PORT   &
 
 # Wait until server is up

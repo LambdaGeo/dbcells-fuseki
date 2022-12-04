@@ -18,3 +18,12 @@ docker-compose down --volumes --rmi all
 docker-compose exec fuseki bash
 
 tar -czvf cell.tar.gz cells/
+
+https://devcenter.heroku.com/articles/application-offline#restart-your-application
+
+forçar atualizar o push no container
+
+
+heroku ps
+
+heroku restart
