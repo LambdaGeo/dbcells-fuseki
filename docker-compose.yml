@@ -8,9 +8,10 @@ services:
     ports:
     - "3030:3030"
     environment:
-      - ADMIN_PASSWORD=admin
+      #- ADMIN_PASSWORD=admin
       - PORT=3030
-    #volumes: 
+    # uso os volumes para pegar os dados atualizado do cells
+    volumes: 
      # - ./backup:/fuseki/backups
      #- ./configuration:/fuseki/configuration
      #- ./databases:/fuseki/databases
