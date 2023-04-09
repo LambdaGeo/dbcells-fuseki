@@ -10,7 +10,8 @@ WORKDIR /fuseki
 RUN mkdir -p configuration
 COPY data/cells.ttl configuration/
 
-RUN mkdir -p databases
+# comento quando preciso fazer o backup dos dados
+RUN mkdir -p databases  
 
 #descompacta 
 ADD data/cells.tar.gz databases  
